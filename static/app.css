@@ -1,0 +1,134 @@
+:root {
+	--main-bg-color: #f5f3ed;
+	--main-font-color: #383732;
+}
+
+body {
+	font-family: "Poppins", "Rubik", sans-serif;
+	background: var(--main-bg-color);
+}
+
+h1 {
+	font-size: 60px;
+	line-height: 72px;
+	letter-spacing: -1px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	color: var(--main-font-color);
+}
+
+p {
+	font-size: 40px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    margin: 10px;
+	color: var(--main-font-color);
+	width: 250px;
+	height: 30px;
+	font-size: 30px;
+	padding-left: 12px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-radius: 6px;
+	background: var(--main-bg-color);
+}
+
+.input-wrapper {
+	position: relative;
+}
+
+label {
+	position: absolute;
+	top: 2px;
+	z-index: 1;
+	left: 20px;
+	user-select: none;
+	-webkit-user-select: none;
+	background-color: var(--main-bg-color);
+	color: var(--main-font-color);
+	padding: 0 5px;
+}
+
+input {
+	margin: 10px;
+	position: relative;
+	border: none;
+	border: 1px solid var(--main-font-color);
+	color: var(--main-font-color);
+	width: 250px;
+	height: 30px;
+	font-size: 30px;
+	padding-left: 12px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-radius: 6px;
+	background: var(--main-bg-color);
+}
+
+.btn {
+    color: var(--main-bg-color);
+	border-radius: 6px;
+	border: 0px;
+	width: 265px;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 18px;
+	padding: 10px 16px;
+	margin: 10px;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	margin-top: 8px;
+}
+
+.btn.submit {
+	background-color: #3468da;
+}
+.btn.delete {
+	background-color: #da3442;
+}
+.btn.cancel {
+    background-color: #969696;
+}
+
+.profile {
+    padding: 5px;
+    width: 125px;
+    height:125px;
+    border-radius: 20px;
+}
+
+#message-list {
+	list-style: none;
+}
+
+.msg {
+	color: var(--main-font-color);
+	margin-left: 10px;
+	width: 400px;
+	text-wrap: wrap;
+}
+
+.msg.err {
+	background-color: #ee7474;
+	border-radius: 6px;
+	padding: 5px;
+}
+
+.msg.ok {
+	background-color: #b0e295;
+	border-radius: 6px;
+	padding: 5px;
+}
