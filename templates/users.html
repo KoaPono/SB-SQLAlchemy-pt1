@@ -3,7 +3,7 @@
 <ul>
     <li><a href="/">John Smith</a></li>
     {% for user in users %}
-    <li><a href="/{{user.id}}">{{user.first_name}} {{user.last_name}}</a></li>
+    <li><a href="/users/{{user.id}}">{{user.first_name}} {{user.last_name}}</a></li>
     {% endfor %}
     <a class="btn submit" href="/users/new">Add user</a>
 </ul>

@@ -1,13 +1,19 @@
 
 {% extends 'base.html' %} {% block content %}
 <div style="display:flex">
-    <img class="profile" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9966634a-07e9-43d2-abac-fdfc47d86ecf/deujhp4-31c473a8-1612-445c-9267-d7fafbd818d3.jpg/v1/fill/w_256,h_256,q_75,strp/beluga_cat_by_mikimeow686_deujhp4-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjU2IiwicGF0aCI6IlwvZlwvOTk2NjYzNGEtMDdlOS00M2QyLWFiYWMtZmRmYzQ3ZDg2ZWNmXC9kZXVqaHA0LTMxYzQ3M2E4LTE2MTItNDQ1Yy05MjY3LWQ3ZmFmYmQ4MThkMy5qcGciLCJ3aWR0aCI6Ijw9MjU2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.ZZlgTdaV8mrqWzKHDtP9UeL3tzS1ZPuIR0tase4rLkw"/>
+    <img class="profile" src={{user.image_url}}/>
     <div>
-        <h1 style="padding-left: 10px;">John Smith</h1>
-        <div style="display: flex; flex-direction:row;">
-            <a class="btn submit" style="width:100px" href="/users/new">Edit</a>
-            <a class="btn delete" style="width:100px" href="/users/new">Delete</a>
-        </div>
+        <h1 style="padding-left: 10px;">{{user.first_name}} {{user.last_name}}</h1>
+        <form style="display: flex; flex-direction:row;">
+            <button class="btn submit" style="width:100px"
+                formaction="/users/{{ user.id }}/edit"
+                formmethod="GET">Edit
+            </button>
+            <button class="btn delete" style="width:100px"
+                formaction="/users/{{ user.id }}/delete"
+                formmethod="POST">Delete
+            </button>
+        </form>
     </div>
 </div>
 
