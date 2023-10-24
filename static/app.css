@@ -44,6 +44,11 @@ li {
 	background: var(--main-bg-color);
 }
 
+li span {
+	font-size: 16px;
+	margin: 10px;
+}
+
 .input-wrapper {
 	position: relative;
 }
@@ -60,7 +65,7 @@ label {
 	padding: 0 5px;
 }
 
-input {
+input, textarea {
 	margin: 10px;
 	position: relative;
 	border: none;
@@ -74,6 +79,10 @@ input {
 	padding-bottom: 8px;
 	border-radius: 6px;
 	background: var(--main-bg-color);
+}
+
+textarea {
+	height: 150px;
 }
 
 .btn {

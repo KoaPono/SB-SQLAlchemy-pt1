@@ -17,4 +17,16 @@
     </div>
 </div>
 
+<h2>Posts</h2>
+
+<ul>
+    {% for post in user.posts %}
+    <li>
+    <a href="/posts/{{post.id}}">{{ post.title }}</a><span>{{ post.formatted_date }}</span>
+    </li>
+    {% endfor %}
+</ul>
+
+<a class="btn submit" href="/users/{{user.id}}/posts/new">Add Post</a>
+
 {% endblock %}
