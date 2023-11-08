@@ -21,6 +21,24 @@ p {
 	font-size: 40px;
 }
 
+.post-title {
+	font-size: 25px;
+}
+.post-content {
+	font-size: 20px;
+	margin-top: -15px;
+	margin-left: 15px;
+}
+.post-detail {
+	font-size: 10px;
+	margin-top: -20px;
+	margin-left: 15px;
+}
+
+hr.rounded {
+	border-top: 2px solid #bbb;
+  }
+
 form {
 	display: flex;
 	flex-direction: column;
@@ -140,4 +158,21 @@ textarea {
 	background-color: #b0e295;
 	border-radius: 6px;
 	padding: 5px;
+}
+
+#navbar {
+	display: flex;
+	align-items:baseline;
+}
+
+#home {
+	font-size: 30px;
+	color: var(--main-font-color);
+	margin-right: 15px;
+	text-decoration: none;
+}
+
+.nav-item {
+	margin-right: 10px;
+	color: var(--main-font-color);
 }

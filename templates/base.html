@@ -6,6 +6,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
 	<body>
-        {% block content %} {% endblock %}
+		<nav id="navbar">
+			<a id="home" href="/">Blogly</a>
+			<a class="nav-item" href="/users">Users</a>
+			<a class="nav-item" href="/tags">Tags</a>
+			<a class="nav-item" href="/users/new">Add user</a>
+			<a class="nav-item" href="/tags/new">Add tag</a>
+		</nav>
+		<hr class="rounded"/>
+		{% block content %} {% endblock %}
 	</body>
 </html>
