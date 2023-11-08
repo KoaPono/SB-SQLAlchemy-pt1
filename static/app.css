@@ -83,7 +83,7 @@ label {
 	padding: 0 5px;
 }
 
-input, textarea {
+.text-input {
 	margin: 10px;
 	position: relative;
 	border: none;
@@ -99,7 +99,11 @@ input, textarea {
 	background: var(--main-bg-color);
 }
 
-textarea {
+.checkbox-input {
+	color: var(--main-font-color);
+}
+
+textarea.text-input {
 	height: 150px;
 }
 
@@ -175,4 +179,21 @@ textarea {
 .nav-item {
 	margin-right: 10px;
 	color: var(--main-font-color);
+}
+
+.tag-list {
+	font-size: 10px;
+	margin-left: 15px;
+}
+
+.badge {
+	text-decoration: none;
+	color: var(--main-bg-color);
+	border-radius: 6px;
+	line-height: 10px;
+	padding: 2px 6px;
+	text-align: center;
+	cursor: pointer;
+	margin-top: 2px;
+	background-color: #3468da;
 }

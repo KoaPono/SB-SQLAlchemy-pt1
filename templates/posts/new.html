@@ -5,7 +5,7 @@
 <form method="POST">
     <div class="input-wrapper">
 		<label for="title">Title</label>
-		<input
+		<input class="text-input"
 			type="text"
 			id="title"
 			name="title"
@@ -15,7 +15,7 @@
 
     <div class="input-wrapper">
 		<label for="content">Content</label>
-		<textarea
+		<textarea class="text-input"
 			id="content"
 			name="content"
 			required
@@ -23,13 +23,13 @@
 	</div>
 
 	{% for tag in tags %}
-    <div>
-      <input class="form-check-input"
+    <div class="input-wrapper">
+      <input
              type="checkbox"
              value="{{ tag.id }}"
              id="tag_{{ tag.id }}"
              name="tags">
-      <label class="form-check-label" for="tag_{{ tag.id }}">
+      <label for="tag_{{ tag.id }}">
         {{ tag.name }}
       </label>
     </div>
